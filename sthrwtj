@@ -1,0 +1,1432 @@
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "掛機防踢";
+    Text = "Anti AFK";
+    Icon = "rbxthumb://type=Asset&id=13975463405&w=150&h=150"
+})
+for i,v in pairs(getconnections(game:GetService("Players").LocalPlayer.Idled)) do
+    v:Disable()
+end
+
+
+
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "幀數解鎖";
+    Text = "FPS Unlock(500)";
+    Icon = "rbxthumb://type=Asset&id=13975463405&w=150&h=150"
+})
+local fps = 500
+    if setfpscap then
+          setfpscap(fps)
+    end
+
+
+
+
+
+
+
+
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://157636218"
+        Sound:Play()
+
+
+
+
+
+local CoreGui = game:GetService("StarterGui")
+local lplayer = game:GetService('Players').LocalPlayer
+local yeeting = false
+function GetPlayer(String)
+local Found = {}
+local strl = String:lower()
+if strl == "all" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+table.insert(Found,v)
+end
+elseif strl == "others" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name ~= lplayer.Name then
+table.insert(Found,v)
+end
+end 
+elseif strl == "me" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name == lplayer.Name then
+table.insert(Found,v)
+end
+end 
+else
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name:lower():sub(1, #String) == String:lower() then
+table.insert(Found,v)
+end
+end 
+end
+return Found 
+end
+function ahh(thing)
+local asd = {'yeet','gui','yeet gui'}
+local f = string.upper(asd[math.random(1,#asd)])
+return f
+end
+
+if game:GetService("CoreGui"):FindFirstChild("ScreenGui") then
+    game:GetService("CoreGui"):FindFirstChild("ScreenGui"):Destroy()
+end
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local FullName = Instance.new("TextButton")
+local Health = Instance.new("TextButton")
+local Stud = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextButton1 = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local TextButton3 = Instance.new("TextButton")
+local TextButton4 = Instance.new("TextButton")
+local TextButton0 = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local UIGradient2 = Instance.new("UIGradient")
+local UIGradient3 = Instance.new("UIGradient")
+local UIGradient4 = Instance.new("UIGradient")
+local UIGradient5 = Instance.new("UIGradient")
+local UIGradient6 = Instance.new("UIGradient")
+local UIGradient7 = Instance.new("UIGradient")
+local diedon = Instance.new("TextButton")
+local diedoff = Instance.new("TextButton")
+
+local Frame1 = Instance.new("Frame")
+local TextButton0b = Instance.new("TextButton")
+local TextButton01b = Instance.new("TextButton")
+local TextButton01 = Instance.new("TextButton")
+local TextButtonb1 = Instance.new("TextButton")
+local TextButtonb2 = Instance.new("TextButton")
+local TextButtonb3 = Instance.new("TextButton")
+local TextButtonb4 = Instance.new("TextButton")
+local TextButtonb5 = Instance.new("TextButton")
+local TextButtonb6 = Instance.new("TextButton")
+local TextButtonb7 = Instance.new("TextButton")
+local skhdis = Instance.new("TextButton")
+local gsis = Instance.new("TextButton")
+local lag = Instance.new("TextButton")
+
+local Frame2 = Instance.new("Frame")
+local Bonus = Instance.new("TextButton")
+local TextButton2c = Instance.new("TextButton")
+local TextButton3c = Instance.new("TextButton")
+local TextButton4c = Instance.new("TextButton")
+local TextButton5c = Instance.new("TextButton")
+local TextButton6c = Instance.new("TextButton")
+local TextButton7c = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(105, 105, 105)
+Frame.BorderColor3 = Color3.new(1,1,1)
+Frame.Position = UDim2.new(0.001,0,0.53)
+Frame.Size = UDim2.new(0.2,0.2,0.4)
+Frame.Active = true
+Frame.Draggable = true
+
+Frame1.Parent = Frame
+Frame1.BackgroundColor3 = Color3.fromRGB(105, 105, 105)
+Frame1.BorderColor3 = Color3.new(1,1,1)
+Frame1.Position = UDim2.new(1,1,0)
+Frame1.Size = UDim2.new(1,0.2,1)
+Frame1.Active = true
+Frame1.Draggable = false
+Frame1.Visible = false
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(105, 105, 105)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(105, 105, 105))}
+UIGradient.Parent = Frame
+
+UIGradient2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(105, 105, 105)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(105, 105, 105))}
+UIGradient2.Parent = Frame1
+
+Frame2.Parent = Frame
+Frame2.BackgroundColor3 = Color3.fromRGB(105, 105, 105)
+Frame2.BorderColor3 = Color3.new(1,1,1)
+Frame2.Position = UDim2.new(2,1,0)
+Frame2.Size = UDim2.new(1,0.2,1)
+Frame2.Active = true
+Frame2.Draggable = false
+Frame2.Visible = false
+
+UIGradient7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(105, 105, 105)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(105, 105, 105))}
+UIGradient7.Parent = Frame2
+
+
+    Bonus.Parent = Frame2
+    Bonus.BackgroundColor3 = Color3.new(0,0,0)
+    Bonus.BackgroundTransparency = 100
+    Bonus.Position = UDim2.new(0.2,0,0.05)
+    Bonus.TextColor3 = Color3.new(1,1,1)
+    Bonus.Size = UDim2.new(0.6,0.9,0.23)
+    Bonus.Font = Enum.Font.PatrickHand
+    Bonus.FontSize = Enum.FontSize.Size14
+    Bonus.Text = "其他功能2\nOther functions 2"
+    Bonus.TextScaled = true
+    Bonus.TextSize = 8
+    Bonus.TextWrapped = true
+    
+    TextButton2c.Parent = Frame2
+    TextButton2c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    TextButton2c.BackgroundTransparency = 0
+    TextButton2c.Position = UDim2.new(0.12,0,0.3)
+    TextButton2c.Size = UDim2.new(0.34,0.9,0.15)
+    TextButton2c.Font = Enum.Font.PatrickHand
+    TextButton2c.FontSize = Enum.FontSize.Size14
+    TextButton2c.Text = "世界加速\nWorld Faster"
+    TextButton2c.TextScaled = true
+    TextButton2c.TextSize = 8
+    TextButton2c.TextWrapped = true
+    
+    TextButton2c.MouseButton1Click:connect(function()
+        local Sound = Instance.new("Sound",game:GetService("SoundService"))
+        Sound.SoundId = "rbxassetid://9125530803"
+        Sound:Play()
+            local x = nill
+            x = hookfunction(wait,function() return x(0) end)
+    end)
+    
+    TextButton3c.Parent = Frame2
+    TextButton3c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    TextButton3c.BackgroundTransparency = 0
+    TextButton3c.Position = UDim2.new(0.54,0,0.3)
+    TextButton3c.Size = UDim2.new(0.34,0.9,0.15)
+    TextButton3c.Font = Enum.Font.PatrickHand
+    TextButton3c.FontSize = Enum.FontSize.Size14
+    TextButton3c.Text = "重新進入遊戲\nRe Join Game"
+    TextButton3c.TextScaled = true
+    TextButton3c.TextSize = 8
+    TextButton3c.TextWrapped = true
+    
+    TextButton3c.MouseButton1Click:connect(function()
+        local TeleportService = game:GetService("TeleportService")
+        local Players = game:GetService("Players")
+        local LocalPlayer = Players.LocalPlayer
+         
+        local Rejoin = coroutine.create(function()
+            local Success, ErrorMessage = pcall(function()
+                TeleportService:Teleport(game.PlaceId, LocalPlayer)
+            end)
+         
+            if ErrorMessage and not Success then
+                warn(ErrorMessage)
+            end
+        end)
+         
+        coroutine.resume(Rejoin)
+    end)
+    
+    TextButton3.Parent = Frame
+    TextButton3.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    TextButton3.BackgroundTransparency = 0
+    TextButton3.Position = UDim2.new(0.54,0,0.7)
+    TextButton3.Size = UDim2.new(0.34,0.9,0.15)
+    TextButton3.Font = Enum.Font.PatrickHand
+    TextButton3.FontSize = Enum.FontSize.Size14
+    TextButton3.Text = "黏住玩家\nAnnoy Player"
+    TextButton3.TextScaled = true
+    TextButton3.TextSize = 8
+    TextButton3.TextWrapped = true
+    
+    AttachSwitch = false
+    TextButton3.MouseButton1Click:connect(function()
+    if AttachSwitch == false then
+    AttachSwitch = true
+    TextButton3.Text = "停止黏住玩家\nUnAnnoy Player"
+    TextButton3.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    else
+    AttachSwitch = false
+    TextButton3.Text = "黏住玩家\nAnnoy Player"
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-54595.27783203125, 1000, 1864.67529296875)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-48627.54150390625, 1000, 1270.641357421875)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-44567.34716796875, 1000, 2132.9228515625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-69867.7529296875, 1000, 5868.0947265625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-55798.11376953125, 1000, 7310.8681640625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(81175.8504638671875, 1000, 907.827880859375)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-43248.50341796875, 1000, 8110.5126953125)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(77286.943359375, 1000, 93151.1640625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-26474.0167236328125, 1000, -2649.3115234375)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-91988.478515625, 1000, -5037.1201171875)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-95873.6337890625, 1000, 966.8990478515625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(99054.45556640625, 1000, -2546.23974609375)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-49771.9345703125, 1000, 80.74989318847656)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-53937.27783203125, 1000, 1864.67529296875)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-42973.54150390625, 1000, 1270.641357421875)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-44927.34716796875, 1000, 2132.9228515625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-65712.7529296875, 1000, 5868.0947265625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-59395.11376953125, 1000, 7310.8681640625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(78991.8504638671875, 1000, 907.827880859375)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-47769.50341796875, 1000, 8110.5126953125)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(80254.943359375, 1000, 93151.1640625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-27892.0167236328125, 1000, -2649.3115234375)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-91983.478515625, 1000, -5037.1201171875)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-95773.6337890625, 1000, 966.8990478515625)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(49704.45556640625, 1000, -2546.23974609375)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-47891.9345703125, 1000, 80.74989318847656)
+    wait(0.1)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30232.025390625, 5052.9464416503906, 392971.046875)
+    TextButton3.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    end
+    end)
+    
+    TextButton5c.Parent = Frame2
+    TextButton5c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    TextButton5c.BackgroundTransparency = 0
+    TextButton5c.Position = UDim2.new(0.54,0,0.5)
+    TextButton5c.Size = UDim2.new(0.34,0.9,0.15)
+    TextButton5c.Font = Enum.Font.PatrickHand
+    TextButton5c.FontSize = Enum.FontSize.Size14
+    TextButton5c.Text = "???"
+    TextButton5c.TextScaled = true
+    TextButton5c.TextSize = 8
+    TextButton5c.TextWrapped = true
+
+    TextButton5c.MouseButton1Click:connect(function()
+
+        end)
+    
+    TextButton6c.Parent = Frame2
+    TextButton6c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    TextButton6c.BackgroundTransparency = 0
+    TextButton6c.Position = UDim2.new(0.12,0,0.7)
+    TextButton6c.Size = UDim2.new(0.34,0.9,0.15)
+    TextButton6c.Font = Enum.Font.PatrickHand
+    TextButton6c.FontSize = Enum.FontSize.Size14
+    TextButton6c.Text = "虛假的帶來\nFake Bring"
+    TextButton6c.TextScaled = true
+    TextButton6c.TextSize = 8
+    TextButton6c.TextWrapped = true
+    
+    BringSwitch = false
+    TextButton6c.MouseButton1Click:connect(function()
+    if BringSwitch == false then
+    BringSwitch = true
+    TextButton6c.Text = "停止虛假的帶來\nUnFake Bring"
+    TextButton6c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    else
+    BringSwitch = false
+    TextButton6c.Text = "虛假的帶來\nFake Bring"
+    TextButton6c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    end
+    end)
+    
+    TextButton7c.Parent = Frame2
+    TextButton7c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    TextButton7c.BackgroundTransparency = 0
+    TextButton7c.Position = UDim2.new(0.54,0,0.7)
+    TextButton7c.Size = UDim2.new(0.34,0.9,0.15)
+    TextButton7c.Font = Enum.Font.PatrickHand
+    TextButton7c.FontSize = Enum.FontSize.Size14
+    TextButton7c.Text = "跟隨\nFollow"
+    TextButton7c.TextScaled = true
+    TextButton7c.TextSize = 8
+    TextButton7c.TextWrapped = true
+    
+    FollowSwitch = false
+    TextButton7c.Text = "跟隨\nFollow"
+    TextButton7c.MouseButton1Click:connect(function()
+    if FollowSwitch == false then
+    FollowSwitch = true
+    TextButton7c.Text = "停止跟隨\nUnFollow"
+    TextButton7c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    else
+    FollowSwitch = false
+    TextButton7c.Text = "跟隨\nFollow"
+    TextButton7c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+    getgenv().Follow = false
+    end
+    end)
+    
+    
+    
+    
+    
+    
+    
+    --On Target Player Left Function
+    game:GetService('RunService').Heartbeat:connect(function()
+    local PTG = FullName.Text
+    
+    if game.Players:FindFirstChild(PTG) then
+    PlayerLeftOperator = true
+    
+
+    
+    --Attach
+    if AttachSwitch == true then
+    local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = targetPs.CFrame
+    end
+    --
+
+    
+    --Bring
+    if BringSwitch == true then
+    local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+    targetPs.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(0,0,-1.5)
+    end
+    --
+    
+    --Follow
+    if FollowSwitch == true then
+    local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+    game.Players.LocalPlayer.Character.Humanoid:MoveTo(targetPs.Position)
+    end
+    --
+end
+    end)
+
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.new(1,1,1)
+TextBox.BackgroundTransparency = 0
+TextBox.Position = UDim2.new(0.2,0,0.1)
+TextBox.Size = UDim2.new(0.6,0.9,0.23)
+TextBox.Font = Enum.Font.PatrickHand
+TextBox.FontSize = Enum.FontSize.Size14
+TextBox.Text = "輸入玩家名稱\nName"
+TextBox.TextScaled = true
+TextBox.TextSize = 8
+TextBox.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButton.BackgroundTransparency = 0
+TextButton.Position = UDim2.new(0.1,0,0.45)
+TextButton.Size = UDim2.new(0.34,0.9,0.15)
+TextButton.Font = Enum.Font.PatrickHand
+TextButton.FontSize = Enum.FontSize.Size14
+TextButton.Text = "傳送玩家\nTP Player"
+TextButton.TextScaled = true
+TextButton.TextSize = 8
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:connect(function()
+local lplayer = game:GetService('Players').LocalPlayer
+ 
+local yeeting = false
+function GetPlayer(String)
+local Found = {}
+local strl = String:lower()
+if strl == "all" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+table.insert(Found,v)
+end
+elseif strl == "others" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name ~= lplayer.Name then
+table.insert(Found,v)
+end
+end 
+elseif strl == "me" then
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name == lplayer.Name then
+table.insert(Found,v)
+end
+end 
+else
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+if v.Name:lower():sub(1, #String) == String:lower() then
+table.insert(Found,v)
+end
+end 
+end
+return Found 
+end
+function ahh(thing)
+local asd = {'yeet','gui','yeet gui'}
+local f = string.upper(asd[math.random(1,#asd)])
+return f
+end
+
+local target = unpack(GetPlayer(TextBox.Text)).Character
+ 
+game:GetService'Players'.LocalPlayer.Character.HumanoidRootPart.CFrame = target.Head.CFrame;coin.Location = target.Head.Position game["Run Service"].Heartbeat:wait()
+end)
+
+TextButton1.Parent = Frame
+TextButton1.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButton1.BackgroundTransparency = 0
+TextButton1.Position = UDim2.new(0.54,0,0.45)
+TextButton1.Size = UDim2.new(0.34,0.9,0.15)
+TextButton1.Font = Enum.Font.PatrickHand
+TextButton1.FontSize = Enum.FontSize.Size14
+TextButton1.Text = "觀看玩家\nView"
+TextButton1.TextScaled = true
+TextButton1.TextSize = 8
+TextButton1.TextWrapped = true
+
+ViewPlayer = false
+TextButton1.MouseButton1Click:connect(function()
+if ViewPlayer == false then
+ViewPlayer = true
+TextButton1.Text = "停止觀看玩家\nUnView"
+local target = unpack(GetPlayer(TextBox.text))
+getgenv().View = true
+while getgenv().View == true do
+game.Workspace.CurrentCamera.CameraSubject = target.Character.Humanoid
+print()
+game:GetService("RunService").Heartbeat:wait();
+end;
+else
+ViewPlayer = false
+TextButton1.Text = "觀看玩家\nView"
+getgenv().View = false
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end
+end)
+
+
+TextButton2.Parent = Frame
+TextButton2.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButton2.BackgroundTransparency = 0
+TextButton2.Position = UDim2.new(0.1,0,0.7)
+TextButton2.Size = UDim2.new(0.34,0.9,0.15)
+TextButton2.Font = Enum.Font.PatrickHand
+TextButton2.FontSize = Enum.FontSize.Size14
+TextButton2.Text = "傳送至很遠的海上\nTP To Very Far Sea"
+TextButton2.TextScaled = true
+TextButton2.TextSize = 8
+TextButton2.TextWrapped = true
+
+TextButton2.MouseButton1Click:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30232.025390625, 452.9464416503906, 392971.046875)
+end)
+
+TextButton4c.Parent = Frame2
+TextButton4c.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButton4c.BackgroundTransparency = 0
+TextButton4c.Position = UDim2.new(0.12,0,0.5)
+TextButton4c.Size = UDim2.new(0.34,0.9,0.15)
+TextButton4c.Font = Enum.Font.PatrickHand
+TextButton4c.FontSize = Enum.FontSize.Size14
+TextButton4c.Text = "伺服器更換\nServer Hop"
+TextButton4c.TextScaled = true
+TextButton4c.TextSize = 8
+TextButton4c.TextWrapped = true
+
+TextButton4c.MouseButton1Click:connect(function()
+    local PlaceID = game.PlaceId
+    local AllIDs = {}
+    local foundAnything = ""
+    local actualHour = os.date("!*t").hour
+    local Deleted = false
+    function TPReturner()
+        local Site;
+        if foundAnything == "" then
+            Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100'))
+        else
+            Site = game.HttpService:JSONDecode(game:HttpGet('https://games.roblox.com/v1/games/' .. PlaceID .. '/servers/Public?sortOrder=Asc&limit=100&cursor=' .. foundAnything))
+        end
+        local ID = ""
+        if Site.nextPageCursor and Site.nextPageCursor ~= "null" and Site.nextPageCursor ~= nil then
+            foundAnything = Site.nextPageCursor
+        end
+        local num = 0;
+        for i,v in pairs(Site.data) do
+            local Possible = true
+            ID = tostring(v.id)
+            if tonumber(v.maxPlayers) > tonumber(v.playing) then
+                for _,Existing in pairs(AllIDs) do
+                    if num ~= 0 then
+                        if ID == tostring(Existing) then
+                            Possible = false
+                        end
+                    else
+                        if tonumber(actualHour) ~= tonumber(Existing) then
+                            local delFile = pcall(function()
+                                -- delfile("NotSameServers.json")
+                                AllIDs = {}
+                                table.insert(AllIDs, actualHour)
+                            end)
+                        end
+                    end
+                    num = num + 1
+                end
+                if Possible == true then
+                    table.insert(AllIDs, ID)
+                    wait()
+                    pcall(function()
+                        wait()
+                        game:GetService("TeleportService"):TeleportToPlaceInstance(PlaceID, ID, game.Players.LocalPlayer)
+                    end)
+                    wait(4)
+                end
+            end
+        end
+    end
+
+    function Teleport()
+        while wait() do
+            pcall(function()
+                TPReturner()
+                if foundAnything ~= "" then
+                    TPReturner()
+                end
+            end)
+        end
+    end
+
+    Teleport()
+end)
+
+
+TextButton0.Parent = Frame
+UIGradient3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(220, 220, 220)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(105, 105, 105)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(220, 220, 220))}
+UIGradient3.Parent = TextButton0
+TextButton0.BackgroundTransparency = 0
+TextButton0.Position = UDim2.new(0.89,0,0.89)
+TextButton0.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton0.Size = UDim2.new(0.1,0,0.1)
+TextButton0.Font = Enum.Font.SourceSansLight
+TextButton0.FontSize = Enum.FontSize.Size14
+TextButton0.Text = ">>"
+TextButton0.TextScaled = true
+TextButton0.TextSize = 8
+TextButton0.TextWrapped = true
+
+TextButton0.MouseButton1Click:connect(function()
+Frame1.Visible = true
+TextButton0.Visible = false
+end)
+
+TextButton01.Parent = Frame1
+UIGradient4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(220, 220, 220)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(105, 105, 105)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(220, 220, 220))}
+UIGradient4.Parent = TextButton01
+TextButton01.BackgroundTransparency = 0
+TextButton01.Position = UDim2.new(0.01,0,0.89)
+TextButton01.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton01.Size = UDim2.new(0.1,0,0.1)
+TextButton01.Font = Enum.Font.SourceSansLight
+TextButton01.FontSize = Enum.FontSize.Size14
+TextButton01.Text = "<<"
+TextButton01.TextScaled = true
+TextButton01.TextSize = 8
+TextButton01.TextWrapped = true
+
+TextButton01.MouseButton1Click:connect(function()
+Frame1.Visible = false
+Frame2.Visible = false
+TextButton0.Visible = true
+TextButton0b.Visible = true
+end)
+
+TextButton0b.Parent = Frame1
+UIGradient5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(220, 220, 220)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(105, 105, 105)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(220, 220, 220))}
+UIGradient5.Parent = TextButton0b
+TextButton0b.BackgroundTransparency = 0
+TextButton0b.Position = UDim2.new(0.89,0,0.89)
+TextButton0b.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton0b.Size = UDim2.new(0.1,0,0.1)
+TextButton0b.Font = Enum.Font.SourceSansLight
+TextButton0b.FontSize = Enum.FontSize.Size14
+TextButton0b.Text = ">>"
+TextButton0b.TextScaled = true
+TextButton0b.TextSize = 8
+TextButton0b.TextWrapped = true
+
+TextButton0b.MouseButton1Click:connect(function()
+Frame2.Visible = true
+TextButton0b.Visible = false
+end)
+
+TextButton01b.Parent = Frame2
+UIGradient6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(220, 220, 220)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(105, 105, 105)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(220, 220, 220))}
+UIGradient6.Parent = TextButton01b
+TextButton01b.BackgroundTransparency = 0
+TextButton01b.Position = UDim2.new(0.01,0,0.89)
+TextButton01b.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton01b.Size = UDim2.new(0.1,0,0.1)
+TextButton01b.Font = Enum.Font.SourceSansLight
+TextButton01b.FontSize = Enum.FontSize.Size14
+TextButton01b.Text = "<<"
+TextButton01b.TextScaled = true
+TextButton01b.TextSize = 8
+TextButton01b.TextWrapped = true
+
+TextButton01b.MouseButton1Click:connect(function()
+Frame2.Visible = false
+TextButton0b.Visible = true
+end)
+
+
+
+
+
+
+
+
+
+diedoff.Parent = Frame
+diedoff.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+diedoff.Position = UDim2.new(0.01,0,0.15)
+diedoff.Size = UDim2.new(0, 70, 0, 45)
+diedoff.Font = Enum.Font.SourceSans
+diedoff.Text = "持續自殺\n(關閉中)\nKeep Die Off"
+diedoff.TextColor3 = Color3.fromRGB(0, 0, 0)
+diedoff.TextSize = 14.000
+diedoff.TextScaled = true
+diedoff.MouseButton1Down:connect(function()
+diedoff.Visible = false
+diedon.Visible = true
+
+die = true
+local runservice = game:GetService("RunService")
+
+runservice.Stepped:Connect(function()
+if die then
+    game.Players.LocalPlayer.Character.Humanoid:ChangeState(15)
+end
+end)
+end)
+
+
+diedon.Parent = Frame
+diedon.BackgroundColor3 = Color3.fromRGB(46, 255, 0)
+diedon.Position = UDim2.new(0.01,0,0.15)
+diedon.Size = UDim2.new(0, 70, 0, 45)
+diedon.Visible = false
+diedon.Font = Enum.Font.SourceSans
+diedon.Text = "持續自殺\n(開啟中)\nKeep Die On"
+diedon.TextColor3 = Color3.fromRGB(0, 0, 0)
+diedon.TextSize = 14.000
+diedon.TextScaled = true
+diedon.MouseButton1Down:connect(function()
+diedoff.Visible = true
+diedon.Visible = false
+die = false
+end)
+
+TextButtonb1.Parent = Frame1
+TextButtonb1.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButtonb1.BackgroundTransparency = 0
+TextButtonb1.Position = UDim2.new(0.54,0,0.37)
+TextButtonb1.Size = UDim2.new(0.34,0.9,0.15)
+TextButtonb1.Font = Enum.Font.PatrickHand
+TextButtonb1.FontSize = Enum.FontSize.Size14
+TextButtonb1.Text = "亂數傳送[5秒]\nTP To Fuck land[5s]"
+TextButtonb1.TextScaled = true
+TextButtonb1.TextSize = 8
+TextButtonb1.TextWrapped = true
+
+TextButtonb1.MouseButton1Click:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4427.34716796875, 1000, 2132.9228515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-6512.7529296875, 1000, 5868.0947265625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5995.11376953125, 1000, 7310.8681640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(1191.8504638671875, 1000, 907.827880859375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-498.50341796875, 1000, 8110.5126953125)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(30286.943359375, 1000, 93151.1640625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-264.0167236328125, 1000, -2649.3115234375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+   	game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9108.478515625, 1000, -5037.1201171875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-9573.6337890625, 1000, 966.8990478515625)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(4904.45556640625, 1000, -2546.23974609375)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4781.9345703125, 1000, 80.74989318847656)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4552.6416015625, 1000, -877.1561279296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5225.466796875, 1000, 790.3766479492188)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-5137.27783203125, 1000, 1864.67529296875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4273.54150390625, 1000, 1270.641357421875)
+    wait(0.000000000001)
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(6602.47509765625, 419.1624450683594, -3123.086181640625)
+    wait(0.000000000001)
+end)
+
+TextButtonb2.Parent = Frame1
+TextButtonb2.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButtonb2.BackgroundTransparency = 0
+TextButtonb2.Position = UDim2.new(0.1,0,0.37)
+TextButtonb2.Size = UDim2.new(0.34,0.9,0.15)
+TextButtonb2.Font = Enum.Font.PatrickHand
+TextButtonb2.FontSize = Enum.FontSize.Size14
+TextButtonb2.Text = "傳送到抽果點(日本)\nTP To Japan"
+TextButtonb2.TextScaled = true
+TextButtonb2.TextSize = 8
+TextButtonb2.TextWrapped = true
+
+TextButtonb2.MouseButton1Click:connect(function()
+    game.Players.LocalPlayer.Character.Humanoid.RootPart.CFrame = CFrame.new(-4780.70751953125, 57.33781814575195, 110.15826416015625)
+end)
+
+TextButtonb6.Parent = Frame1
+TextButtonb6.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButtonb6.BackgroundTransparency = 0
+TextButtonb6.Position = UDim2.new(0.1,0,0.01)
+TextButtonb6.Size = UDim2.new(0.34,0.9,0.15)
+TextButtonb6.Font = Enum.Font.PatrickHand
+TextButtonb6.FontSize = Enum.FontSize.Size14
+TextButtonb6.Text = "速度增加\nSpeed Up!"
+TextButtonb6.TextScaled = true
+TextButtonb6.TextSize = 8
+TextButtonb6.TextWrapped = true
+
+TextButtonb6.MouseButton1Click:connect(function()
+    local walkspeedplayer = game:GetService("Players").LocalPlayer
+        local walkspeedmouse = walkspeedplayer:GetMouse()
+        
+        local walkspeedenabled = false
+        
+        if walkspeedenabled == false then
+        _G.WS = 1000;
+        local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+        Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+        Humanoid.WalkSpeed = _G.WS;
+        end)
+        Humanoid.WalkSpeed = _G.WS;
+        
+        walkspeedenabled = true
+        end
+end)
+
+TextButtonb7.Parent = Frame1
+TextButtonb7.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+TextButtonb7.BackgroundTransparency = 0
+TextButtonb7.Position = UDim2.new(0.54,0,0.01)
+TextButtonb7.Size = UDim2.new(0.34,0.9,0.15)
+TextButtonb7.Font = Enum.Font.PatrickHand
+TextButtonb7.FontSize = Enum.FontSize.Size14
+TextButtonb7.Text = "增加跳躍\nJump Power!"
+TextButtonb7.TextScaled = true
+TextButtonb7.TextSize = 8
+TextButtonb7.TextWrapped = true
+
+TextButtonb7.MouseButton1Click:connect(function()
+    local jumppowerplayer = game:GetService("Players").LocalPlayer
+    local jumppowermouse = jumppowerplayer:GetMouse()
+    
+    local jumppowerenabled = false
+    
+    if jumppowerenabled == false then
+    _G.JP = 1000;
+    local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+    Humanoid:GetPropertyChangedSignal("JumpPower"):Connect(function()
+    Humanoid.JumpPower = _G.JP;
+    end)
+    Humanoid.JumpPower = _G.JP;
+    
+    jumppowerenabled = true
+    end
+end)
+
+
+
+
+
+
+
+
+skhdis.Parent = Frame1
+skhdis.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+skhdis.BackgroundTransparency = 0
+skhdis.Position = UDim2.new(0.1,0,0.73)
+skhdis.Size = UDim2.new(0.34,0.9,0.15)
+skhdis.Font = Enum.Font.PatrickHand
+skhdis.FontSize = Enum.FontSize.Size14
+skhdis.Text = "傳送至海王&海德拉島\nTP To Legacy&Hydra Island"
+skhdis.TextScaled = true
+skhdis.TextSize = 8
+skhdis.TextWrapped = true
+skhdis.MouseButton1Click:connect(function()
+    local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+    if game:GetService("Workspace").Island:FindFirstChild("Sea King Water") then
+        plr.CFrame = game:GetService("Workspace").Island["Sea King Water"].Main.CFrame * CFrame.new(0,1000,0)
+    elseif game:GetService("Workspace").Island:FindFirstChild("Sea King Thunder") then
+       plr.CFrame = game:GetService("Workspace").Island["Sea King Thunder"].Main.CFrame * CFrame.new(0,1000,0)
+    elseif game:GetService("Workspace").Island:FindFirstChild("Sea King Lava") then
+        plr.CFrame = game:GetService("Workspace").Island["Sea King Lava"].Main.CFrame * CFrame.new(0,1000,0)
+    end
+    local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+    if game:GetService("Workspace").Island:FindFirstChild("Legacy Island1") then
+       plr.CFrame = game:GetService("Workspace").Island:FindFirstChild("Legacy Island1").ChestSpawner.CFrame * CFrame.new(0,500,-100)
+    elseif game:GetService("Workspace").Island:FindFirstChild("Legacy Island2") then
+       plr.CFrame = game:GetService("Workspace").Island:FindFirstChild("Legacy Island2").ChestSpawner.CFrame * CFrame.new(0,500,-100)
+    elseif game:GetService("Workspace").Island:FindFirstChild("Legacy Island3") then
+       plr.CFrame = game:GetService("Workspace").Island:FindFirstChild("Legacy Island3").ChestSpawner.CFrame * CFrame.new(0,500,-100)
+    elseif game:GetService("Workspace").Island:FindFirstChild("Legacy Island4") then
+       plr.CFrame = game:GetService("Workspace").Island:FindFirstChild("Legacy Island4").ChestSpawner.CFrame * CFrame.new(0,500,-100)
+    end
+end)
+
+lag.Parent = Frame1
+lag.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+lag.BackgroundTransparency = 0
+lag.Position = UDim2.new(0.3,0,0.55)
+lag.Size = UDim2.new(0.34,0.9,0.15)
+lag.Font = Enum.Font.PatrickHand
+lag.FontSize = Enum.FontSize.Size14
+lag.Text = "卡服\nlag Server"
+lag.TextScaled = true
+lag.TextSize = 8
+lag.TextWrapped = true
+lag.MouseButton1Click:connect(function()
+
+
+    local Players = game:GetService("Players")
+    local LP = Players.LocalPlayer
+    local StarterGui = game:GetService('StarterGui')
+    for i=1, 15 do
+        local r = pcall(StarterGui["SetCore"])
+        if r then break end
+        game:GetService('RunService').RenderStepped:wait()
+    end
+    wait()
+    
+    local properties = {
+        Color = Color3.fromRGB(255, 0, 0);
+        Font = Enum.Font.SpecialElite;
+        TextSize = 25;
+    }
+    
+                      
+    properties.Text = "lag Server On\nyou might get Disconnected"
+    StarterGui:SetCore("ChatMakeSystemMessage", properties)
+    
+    function translateFrom(message)
+        local translation = translate(message, YourLang)
+    
+        local text
+        if translation.from.language ~= YourLang then 
+            text = translation.text
+        end
+    
+        return {text, translation.from.language}
+    end
+    
+    function get(plr, msg)
+        local tab = translateFrom(msg)
+        local translation = tab[1]
+        if translation then
+            properties.Text = "("..tab[2]:upper()..") ".."[".. plr.Name .."]: "..translation
+            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+        end
+    end
+    
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.OnMessageDoneFiltering.OnClientEvent:Connect(function(messageData) 
+        get(game:GetService("Players")[messageData.FromSpeaker],messageData.Message)
+    end)
+
+
+	while wait(1.5) do --// don't change it's the best
+	game:GetService("NetworkClient"):SetOutgoingKBPSLimit(math.huge)
+	local function getmaxvalue(val)
+	   local mainvalueifonetable = 499999
+	   if type(val) ~= "number" then
+		   return nil
+	   end
+	   local calculateperfectval = (mainvalueifonetable/(val+2))
+	   return calculateperfectval
+	end
+	 
+	local function bomb(tableincrease, tries)
+	local maintable = {}
+	local spammedtable = {}
+	 
+	table.insert(spammedtable, {})
+	z = spammedtable[1]
+	 
+	for i = 1, tableincrease do
+		local tableins = {}
+		table.insert(z, tableins)
+		z = tableins
+	end
+	 
+	local calculatemax = getmaxvalue(tableincrease)
+	local maximum
+	 
+	if calculatemax then
+		 maximum = calculatemax
+		 else
+		 maximum = 999999
+	end
+	 
+	for i = 1, maximum do
+		 table.insert(maintable, spammedtable)
+	end
+	 
+	for i = 1, tries do
+		 game.RobloxReplicatedStorage.SetPlayerBlockList:FireServer(maintable)
+	end
+	end
+	 
+	bomb(289, 5)
+	end
+end)
+
+
+
+gsis.Parent = Frame1
+gsis.BackgroundColor3 = Color3.fromRGB(192, 192, 192)
+gsis.BackgroundTransparency = 0
+gsis.Position = UDim2.new(0.54,0,0.73)
+gsis.Size = UDim2.new(0.34,0.9,0.15)
+gsis.Font = Enum.Font.PatrickHand
+gsis.FontSize = Enum.FontSize.Size14
+gsis.Text = "傳送至鬼船\nTP To Ghost Ship"
+gsis.TextScaled = true
+gsis.TextSize = 8
+gsis.TextWrapped = true
+gsis.MouseButton1Click:connect(function()
+    local plr = game.Players.LocalPlayer.Character.HumanoidRootPart
+    if game:GetService("Workspace").GhostMonster:FindFirstChild("Ghost Ship") then
+    plr.CFrame = game:GetService("Workspace").GhostMonster["Ghost Ship"].HumanoidRootPart.CFrame * CFrame.new(0,500,0)
+    end
+end)
+
+
+TextButtonb3.Parent = Frame1
+TextButtonb3.BackgroundColor3 = Color3.new(0,0,0)
+TextButtonb3.BackgroundTransparency = 100
+TextButtonb3.Position = UDim2.new(0.2,0,0.145)
+TextButtonb3.TextColor3 = Color3.new(1,1,1)
+TextButtonb3.Size = UDim2.new(0.6,0.9,0.23)
+TextButtonb3.Font = Enum.Font.PatrickHand
+TextButtonb3.FontSize = Enum.FontSize.Size14
+TextButtonb3.Text = "其他功能\nOther functions"
+TextButtonb3.TextScaled = true
+TextButtonb3.TextSize = 8
+TextButtonb3.TextWrapped = true
+
+TextButtonb4.Parent = Frame1
+TextButtonb4.BackgroundColor3 = Color3.new(0,0,0)
+TextButtonb4.BackgroundTransparency = 100
+TextButtonb4.Position = UDim2.new(0.15,0,0.9)
+TextButtonb4.TextColor3 = Color3.new(1,1,1)
+TextButtonb4.Size = UDim2.new(0.7,0.9,0.1)
+TextButtonb4.Font = Enum.Font.SourceSansLight
+TextButtonb4.FontSize = Enum.FontSize.Size14
+TextButtonb4.Text = ""
+TextButtonb4.TextScaled = true
+TextButtonb4.TextSize = 8
+TextButtonb4.TextWrapped = true
+
+TextButtonb5.Parent = Frame
+TextButtonb5.BackgroundColor3 = Color3.new(0, 255, 0)
+TextButtonb5.BackgroundTransparency = 100
+TextButtonb5.Position = UDim2.new(0.15,0,0.9)
+TextButtonb5.TextColor3 = Color3.new(0, 255, 255)
+TextButtonb5.Size = UDim2.new(0.7,0.9,0.1)
+TextButtonb5.Font = Enum.Font.FredokaOne
+TextButtonb5.FontSize = Enum.FontSize.Size14
+TextButtonb5.Text = "a596300 Player GUI V6"
+TextButtonb5.TextScaled = true
+TextButtonb5.TextSize = 8
+TextButtonb5.TextWrapped = true
+
+
+
+
+
+
+
+
+
+FullName.Parent = Frame
+FullName.BackgroundColor3 = Color3.new(8,0,0)
+FullName.BackgroundTransparency = 1
+FullName.TextColor3 = Color3.new(1,1,1)
+FullName.Position = UDim2.new(0.30,0,0.0)
+FullName.Size = UDim2.new(0.45,0,0.1)
+FullName.Font = Enum.Font.Cartoon
+FullName.FontSize = Enum.FontSize.Size14
+FullName.Text = "尚未輸入玩家 Player not found"
+FullName.TextSize = 30
+
+
+
+
+Health.Parent = Frame
+Health.BackgroundColor3 = Color3.new(8,0,0)
+Health.BackgroundTransparency = 1
+Health.TextColor3 = Color3.new(1,1,1)
+Health.Position = UDim2.new(0.5,0,0.34)
+Health.Size = UDim2.new(0.45,0,0.1)
+Health.Font = Enum.Font.Cartoon
+Health.FontSize = Enum.FontSize.Size14
+Health.Text = "此玩家血量 Health: 0"
+Health.TextScaled = true
+Health.TextSize = 5
+Health.TextWrapped = true
+
+Stud.Parent = Frame
+Stud.BackgroundColor3 = Color3.new(8,0,0)
+Stud.BackgroundTransparency = 1
+Stud.TextColor3 = Color3.new(1,1,1)
+Stud.Position = UDim2.new(0,0,0.34)
+Stud.Size = UDim2.new(0.45,0,0.1)
+Stud.Font = Enum.Font.Cartoon
+Stud.FontSize = Enum.FontSize.Size14
+Stud.Text = "此玩家距離 Distance: 0"
+Stud.TextScaled = true
+Stud.TextSize = 5
+Stud.TextWrapped = true
+
+--Locate Target
+local part = Instance.new("Part")
+
+local position = Vector3.new(0,100000,0)
+part.Name = "TargetLocatePart"
+part.Color = Color3.new(0,0,0)
+part.Material = Enum.Material.Plastic
+part.Transparency = 1
+part.Position = position
+part.Size = Vector3.new(1,1,1)
+part.CastShadow = true
+part.Anchored = true
+part.CanCollide = false
+part.Parent = workspace
+
+
+local BillboardGui = Instance.new("BillboardGui")
+
+BillboardGui.Parent = game:GetService("Workspace").TargetLocatePart
+BillboardGui.AlwaysOnTop = true
+BillboardGui.LightInfluence = 1
+BillboardGui.Size = UDim2.new(0, 25, 0, 25)
+BillboardGui.StudsOffset = Vector3.new(0, 0, 0)
+
+game:GetService('RunService').Stepped:connect(function()
+local PTG = FullName.Text
+
+if game.Players:FindFirstChild(PTG) then
+PlayerLeftOperator = true
+else
+if PlayerLeftOperator == true then
+PlayerLeftOperator = false
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+Stud.Text = "此玩家距離 Distance: 0"
+FullName.Text = "找不到玩家 Player not found"
+Health.Text = "此玩家血量 Health: 0"
+TextButton1.Text = "觀看玩家\nView"
+ViewPlayer = false
+getgenv().View = false
+TextBox.Text = ""
+game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character.Humanoid
+end
+end
+end)
+
+getgenv().Operator = true
+while getgenv().Operator == true do
+spawn(function()
+if TextBox.Text == "" then
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+Stud.Text = "此玩家距離 Distance: 0"
+FullName.Text = "找不到玩家 Player not found"
+Health.Text = "此玩家血量 Health: 0"
+TextButton1.Text = "觀看玩家\nView"
+ViewPlayer = false
+getgenv().View = false
+else
+local targetHP = unpack(GetPlayer(TextBox.Text)).Character.Humanoid.Health
+local targetName = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart.Parent.Name
+local targetPs = unpack(GetPlayer(TextBox.Text)).Character.HumanoidRootPart
+
+workspace:FindFirstChild("TargetLocatePart").CFrame = targetPs.CFrame
+Stud.Text = "此玩家距離 Distance: "..math.floor((targetPs.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).magnitude)
+FullName.Text = ""..targetName
+Health.Text = "此玩家血量 Health: "..targetHP
+if game.Players:FindFirstChild(targetName) then
+else
+workspace:FindFirstChild("TargetLocatePart").CFrame = CFrame.new(0,10000000,0)
+Stud.Text = "此玩家距離 Distance: 0"
+FullName.Text = "找不到玩家 Player not found"
+Health.Text = "此玩家血量 Health: 0"
+TextButton1.Text = "觀看玩家\nView"
+ViewPlayer = false
+getgenv().View = false
+end
+end
+end)
+wait(0.1)
+end
